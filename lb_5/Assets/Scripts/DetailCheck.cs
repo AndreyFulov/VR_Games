@@ -1,0 +1,46 @@
+using UnityEngine;
+
+public class DetailCheck : MonoBehaviour
+{
+    public BoxCollider collider;
+    public BoxCollider other;
+    
+    public BoxCollider grabCollider;
+    public bool isSet = false;
+    public DetailCheck script;
+
+    public void CheckAndEnableDetail()
+    {
+        if (!other.enabled) collider.enabled = true;
+    }
+
+    public void DisableOtherGrab()
+    {
+        if (!collider.enabled && script.isSet)
+        {
+            grabCollider.enabled = false;
+            Debug.Log("disabled");
+        }
+        if (!isSet) 
+        {
+            grabCollider.enabled = true;
+            Debug.Log("enabled");
+        }
+    }
+
+    public void OnTriggerEnter(Collider otherCollider)
+    {
+        if (!otherCollider.CompareTag("AssemblyTrigger"))
+        {
+            isSet = true;
+        }
+    }
+
+    public void OnTriggerExit(Collider otherCollider)
+    {
+        if (!otherCollider.CompareTag("AssemblyTrigger"))
+        {
+            isSet = false;
+        }
+    }
+}
