@@ -86,6 +86,7 @@ public class AssemblyTimerManager : MonoBehaviour
         if (currentDetailsCount == 6)
         {
             isAssembling = false;
+            StopTimer();
         }
     }
     public void RemoveDetail() 

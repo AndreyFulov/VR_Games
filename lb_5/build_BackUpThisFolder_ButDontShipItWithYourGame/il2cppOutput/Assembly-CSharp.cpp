@@ -626,6 +626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LeaderboardManager_IsRecordTime_m43F5460
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void VRKeyboardManager_SetRecordTime_m7ACA137FC4C1494591E71D89227F1426A4296255_inline (VRKeyboardManager_t11307D6BA90CDA5EFAA798969F6CE01BF37165BB* __this, float ___0_time, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_ShowKeyboard_m47EB63EFE33DEDF8ECAB3809A8595F0141FBCAEE (VRKeyboardManager_t11307D6BA90CDA5EFAA798969F6CE01BF37165BB* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_StartTimer_mAA8BA133DCA057FB0645245C3509D7B4F26519A2 (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_StopTimer_m07718BDB196C02280D18059241C7C834DA2BF019 (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Collider_get_enabled_mDBFB488088ADB14C8016A83EF445653AC5A4A12B (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70 (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, bool ___0_value, const RuntimeMethod* method) ;
@@ -694,7 +695,6 @@ inline void List_1__ctor_m9BE2E1BEFEE11E2B35CFC9B39AFF045892FAB4CE (List_1_t72AC
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m3A53FA9C60275545E71235041D3BF5FC99EA85D8 (U3CU3Ec_t8491CAC00159E722F9BD9B5B1242BF95EE4A1B7E* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_StopTimer_m07718BDB196C02280D18059241C7C834DA2BF019 (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_SetRecord_m96C5A7748C671E43614077299912BC9EA4A52D38 (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline (String_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE (String_t* __this, int32_t ___0_startIndex, int32_t ___1_length, const RuntimeMethod* method) ;
@@ -732,10 +732,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_Awake_m480F4E06B65D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:21>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:21>
 		((AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5_StaticFields*)il2cpp_codegen_static_fields_for(AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5_il2cpp_TypeInfo_var))->___Instance = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&((AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5_StaticFields*)il2cpp_codegen_static_fields_for(AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5_il2cpp_TypeInfo_var))->___Instance), (void*)__this);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:22>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:22>
 		return;
 	}
 }
@@ -749,11 +749,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_Start_m45C1E9DD7F72
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:26>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:26>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___timerText;
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_0, _stringLiteral1F9EB30933B79CC7D771E4B80003779229E2E66D);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:27>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:27>
 		return;
 	}
 }
@@ -761,7 +761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_Start_m45C1E9DD7F72
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_Update_m5F72E97EAFBCC97E714A76B48A2D01F26687111E (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:31>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:31>
 		bool L_0 = __this->___timerIsRunning;
 		if (!L_0)
 		{
@@ -769,19 +769,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_Update_m5F72E97EAFB
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:33>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:33>
 		float L_1 = __this->___elapsedTime;
 		float L_2;
 		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___elapsedTime = ((float)il2cpp_codegen_add(L_1, L_2));
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:34>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:34>
 		float L_3 = __this->___elapsedTime;
 		AssemblyTimerManager_UpdateTimerDisplay_mBA60BD7BCE932553F1E4D599222F2F75E5246A10(__this, L_3, NULL);
 	}
 
 IL_0026:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:36>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:36>
 		return;
 	}
 }
@@ -789,7 +789,7 @@ IL_0026:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_StartTimer_mAA8BA133DCA057FB0645245C3509D7B4F26519A2 (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:40>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:40>
 		bool L_0 = __this->___timerIsRunning;
 		if (L_0)
 		{
@@ -797,17 +797,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_StartTimer_mAA8BA13
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:42>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:42>
 		__this->___timerIsRunning = (bool)1;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:43>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:43>
 		__this->___elapsedTime = (0.0f);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:44>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:44>
 		__this->___isDone = (bool)0;
 	}
 
 IL_0021:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:46>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:46>
 		return;
 	}
 }
@@ -815,7 +815,7 @@ IL_0021:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_StopTimer_m07718BDB196C02280D18059241C7C834DA2BF019 (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:50>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:50>
 		bool L_0 = __this->___timerIsRunning;
 		if (!L_0)
 		{
@@ -823,13 +823,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_StopTimer_m07718BDB
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:52>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:52>
 		__this->___timerIsRunning = (bool)0;
 	}
 
 IL_000f:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:54>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:54>
 		return;
 	}
 }
@@ -846,22 +846,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_UpdateTimerDisplay_
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:58>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:58>
 		float L_0 = ___0_time;
 		int32_t L_1;
 		L_1 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline(((float)(L_0/(60.0f))), NULL);
 		V_0 = L_1;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:59>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:59>
 		float L_2 = ___0_time;
 		int32_t L_3;
 		L_3 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline((fmodf(L_2, (60.0f))), NULL);
 		V_1 = L_3;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:60>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:60>
 		float L_4 = ___0_time;
 		int32_t L_5;
 		L_5 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline((fmodf(((float)il2cpp_codegen_multiply(L_4, (100.0f))), (100.0f))), NULL);
 		V_2 = L_5;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:62>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:62>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_6 = __this->___timerText;
 		int32_t L_7 = V_0;
 		int32_t L_8 = L_7;
@@ -876,7 +876,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_UpdateTimerDisplay_
 		L_16 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteralFD68D5892B12F561EBF59F4937F8200072B69509, L_9, L_12, L_15, NULL);
 		NullCheck(L_6);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_6, L_16);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:63>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:63>
 		return;
 	}
 }
@@ -884,10 +884,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_UpdateTimerDisplay_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_SetAssemblyState_m8321893761AD8DBC70991859EDB66C23898D5A9E (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, bool ___0_assembled, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:67>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:67>
 		bool L_0 = ___0_assembled;
 		__this->___isDone = L_0;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:68>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:68>
 		return;
 	}
 }
@@ -903,13 +903,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_SetRecord_m96C5A774
 	}
 	LeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863* V_0 = NULL;
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:72>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:72>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		LeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863* L_0;
 		L_0 = Object_FindObjectOfType_TisLeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863_m0748260AF04523B6DC9CEDF35239E7C1AFA6365B(Object_FindObjectOfType_TisLeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863_m0748260AF04523B6DC9CEDF35239E7C1AFA6365B_RuntimeMethod_var);
 		V_0 = L_0;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:74>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:75>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:74>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:75>
 		LeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863* L_1 = V_0;
 		bool L_2;
 		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -939,12 +939,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_SetRecord_m96C5A774
 
 IL_002a:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:77>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:77>
 		VRKeyboardManager_t11307D6BA90CDA5EFAA798969F6CE01BF37165BB* L_7 = __this->___keyboardManager;
 		float L_8 = __this->___elapsedTime;
 		NullCheck(L_7);
 		VRKeyboardManager_SetRecordTime_m7ACA137FC4C1494591E71D89227F1426A4296255_inline(L_7, L_8, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:78>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:78>
 		VRKeyboardManager_t11307D6BA90CDA5EFAA798969F6CE01BF37165BB* L_9 = __this->___keyboardManager;
 		NullCheck(L_9);
 		VRKeyboardManager_ShowKeyboard_m47EB63EFE33DEDF8ECAB3809A8595F0141FBCAEE(L_9, NULL);
@@ -952,7 +952,7 @@ IL_002a:
 
 IL_0046:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:80>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:80>
 		return;
 	}
 }
@@ -960,26 +960,28 @@ IL_0046:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_AddDetail_m60D6471BB07135BA517E94AD8A0D7848FC2BECC9 (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:84>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:84>
 		AssemblyTimerManager_StartTimer_mAA8BA133DCA057FB0645245C3509D7B4F26519A2(__this, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:85>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:85>
 		int32_t L_0 = __this->___currentDetailsCount;
 		__this->___currentDetailsCount = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:86>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:86>
 		int32_t L_1 = __this->___currentDetailsCount;
 		if ((!(((uint32_t)L_1) == ((uint32_t)6))))
 		{
-			goto IL_0024;
+			goto IL_002a;
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:88>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:88>
 		__this->___isAssembling = (bool)0;
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:89>
+		AssemblyTimerManager_StopTimer_m07718BDB196C02280D18059241C7C834DA2BF019(__this, NULL);
 	}
 
-IL_0024:
+IL_002a:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:90>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:91>
 		return;
 	}
 }
@@ -987,10 +989,10 @@ IL_0024:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_RemoveDetail_m594FA5269D99235B9667CA8CC9266B828CEF0438 (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:93>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:94>
 		int32_t L_0 = __this->___currentDetailsCount;
 		__this->___currentDetailsCount = ((int32_t)il2cpp_codegen_subtract(L_0, 1));
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:94>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:95>
 		bool L_1 = __this->___isAssembling;
 		if (L_1)
 		{
@@ -1005,15 +1007,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager_RemoveDetail_m594FA
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:96>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:97>
 		__this->___isAssembling = (bool)1;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:97>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:98>
 		__this->___isDone = (bool)1;
 	}
 
 IL_002c:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:99>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:100>
 		return;
 	}
 }
@@ -1021,7 +1023,7 @@ IL_002c:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager__ctor_m14DEE2227B14126D7862470742C759EE7563ABC8 (AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/AssemblyTimerManager.cs:10>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/AssemblyTimerManager.cs:10>
 		__this->___isAssembling = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -1039,7 +1041,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTimerManager__ctor_m14DEE2227B14
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DetailCheck_CheckAndEnableDetail_m72638475D45A97EA4F8A7D29084F452BB3C199A1 (DetailCheck_tC734BB2B3ED3385A2EDECF92217FBBB8E9A7A339* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:14>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:14>
 		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_0 = __this->___other;
 		NullCheck(L_0);
 		bool L_1;
@@ -1050,7 +1052,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DetailCheck_CheckAndEnableDetail_m726384
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:14>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:14>
 		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_2 = __this->___collider;
 		NullCheck(L_2);
 		Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70(L_2, (bool)1, NULL);
@@ -1058,7 +1060,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DetailCheck_CheckAndEnableDetail_m726384
 
 IL_0019:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:15>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:15>
 		return;
 	}
 }
@@ -1074,7 +1076,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DetailCheck_DisableOtherGrab_m7941287D7A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:19>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:19>
 		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_0 = __this->___collider;
 		NullCheck(L_0);
 		bool L_1;
@@ -1094,18 +1096,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DetailCheck_DisableOtherGrab_m7941287D7A
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:21>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:21>
 		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_4 = __this->___grabCollider;
 		NullCheck(L_4);
 		Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70(L_4, (bool)0, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:22>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:22>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral0C7F57443E21815E0C0D281629845C1805E8DDBD, NULL);
 	}
 
 IL_0030:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:24>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:24>
 		bool L_5 = __this->___isSet;
 		if (L_5)
 		{
@@ -1113,18 +1115,18 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:26>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:26>
 		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_6 = __this->___grabCollider;
 		NullCheck(L_6);
 		Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70(L_6, (bool)1, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:27>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:27>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralF9D225733E1D10F9344C755C4A9C0870CD1DE97B, NULL);
 	}
 
 IL_004e:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:29>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:29>
 		return;
 	}
 }
@@ -1138,7 +1140,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DetailCheck_OnTriggerEnter_m4EC676F3C2B9
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:33>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:33>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_otherCollider;
 		NullCheck(L_0);
 		bool L_1;
@@ -1149,13 +1151,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DetailCheck_OnTriggerEnter_m4EC676F3C2B9
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:35>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:35>
 		__this->___isSet = (bool)1;
 	}
 
 IL_0014:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:37>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:37>
 		return;
 	}
 }
@@ -1169,7 +1171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DetailCheck_OnTriggerExit_m128D9272D435E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:41>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:41>
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_otherCollider;
 		NullCheck(L_0);
 		bool L_1;
@@ -1180,13 +1182,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DetailCheck_OnTriggerExit_m128D9272D435E
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:43>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:43>
 		__this->___isSet = (bool)0;
 	}
 
 IL_0014:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/DetailCheck.cs:45>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/DetailCheck.cs:45>
 		return;
 	}
 }
@@ -1210,11 +1212,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DetailCheck__ctor_mA74957752B06F834A9605
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeaderboardManager_Start_m27C78A8ECC302856D7548317D1B7DBBE54871170 (LeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:15>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:15>
 		LeaderboardManager_LoadLeaderboard_mA1BB77A3C18A091FDC3A2D5D1C3AC0A2471D239C(__this, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:16>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:16>
 		LeaderboardManager_UpdateLeaderboardText_mB87B62B6D09A837CCDDF3584E752ED14B77A5ECA(__this, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:17>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:17>
 		return;
 	}
 }
@@ -1237,7 +1239,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LeaderboardManager_IsRecordTime_m43F5460
 	Func_2_tE575872DDE2801C0B3D76B4EB057B100DA71D4E7* G_B5_0 = NULL;
 	List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* G_B5_1 = NULL;
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:21>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:21>
 		List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* L_0 = __this->___leaderboardEntries;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -1248,13 +1250,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool LeaderboardManager_IsRecordTime_m43F5460
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:22>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:22>
 		return (bool)1;
 	}
 
 IL_000f:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:24>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:24>
 		List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* L_2 = __this->___leaderboardEntries;
 		NullCheck(L_2);
 		int32_t L_3;
@@ -1266,13 +1268,13 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:25>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:25>
 		return (bool)1;
 	}
 
 IL_0024:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:27>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:27>
 		List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* L_5 = __this->___leaderboardEntries;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t8491CAC00159E722F9BD9B5B1242BF95EE4A1B7E_il2cpp_TypeInfo_var);
 		Func_2_tE575872DDE2801C0B3D76B4EB057B100DA71D4E7* L_6 = ((U3CU3Ec_t8491CAC00159E722F9BD9B5B1242BF95EE4A1B7E_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t8491CAC00159E722F9BD9B5B1242BF95EE4A1B7E_il2cpp_TypeInfo_var))->___U3CU3E9__4_0;
@@ -1303,7 +1305,7 @@ IL_0049:
 		float L_11;
 		L_11 = Enumerable_Max_TisLeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D_mEF763E4517F865E21C45CD19E26DE674CB780BE3(G_B6_1, G_B6_0, Enumerable_Max_TisLeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D_mEF763E4517F865E21C45CD19E26DE674CB780BE3_RuntimeMethod_var);
 		V_0 = L_11;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:28>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:28>
 		float L_12 = ___0_time;
 		float L_13 = V_0;
 		return (bool)((((float)L_12) < ((float)L_13))? 1 : 0);
@@ -1332,11 +1334,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeaderboardManager_AddEntry_m5FCA64ED41B
 	List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* G_B1_1 = NULL;
 	LeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863* G_B1_2 = NULL;
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:33>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:34>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:35>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:36>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:37>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:33>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:34>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:35>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:36>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:37>
 		List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* L_0 = __this->___leaderboardEntries;
 		LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* L_1 = (LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D*)il2cpp_codegen_object_new(LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D_il2cpp_TypeInfo_var);
 		LeaderboardEntry__ctor_mAC72F58F692694604792B1267BC3E7DBB73CE5B6(L_1, NULL);
@@ -1351,10 +1353,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeaderboardManager_AddEntry_m5FCA64ED41B
 		L_4->___time = L_5;
 		NullCheck(L_0);
 		List_1_Add_m049E3D4E842787E3F4BF3A0E05CFF1CD1B3806A2_inline(L_0, L_4, List_1_Add_m049E3D4E842787E3F4BF3A0E05CFF1CD1B3806A2_RuntimeMethod_var);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:39>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:40>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:41>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:42>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:39>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:40>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:41>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:42>
 		List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* L_6 = __this->___leaderboardEntries;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t8491CAC00159E722F9BD9B5B1242BF95EE4A1B7E_il2cpp_TypeInfo_var);
 		Func_2_tE575872DDE2801C0B3D76B4EB057B100DA71D4E7* L_7 = ((U3CU3Ec_t8491CAC00159E722F9BD9B5B1242BF95EE4A1B7E_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t8491CAC00159E722F9BD9B5B1242BF95EE4A1B7E_il2cpp_TypeInfo_var))->___U3CU3E9__5_0;
@@ -1395,11 +1397,11 @@ IL_0044:
 		NullCheck(G_B2_2);
 		G_B2_2->___leaderboardEntries = L_15;
 		Il2CppCodeGenWriteBarrier((void**)(&G_B2_2->___leaderboardEntries), (void*)L_15);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:44>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:44>
 		LeaderboardManager_SaveLeaderboard_mB18A24659DE925E2CF40FA87BB22B06C147C3AD3(__this, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:45>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:45>
 		LeaderboardManager_UpdateLeaderboardText_mB87B62B6D09A837CCDDF3584E752ED14B77A5ECA(__this, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:46>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:46>
 		return;
 	}
 }
@@ -1424,7 +1426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeaderboardManager_UpdateLeaderboardText
 	int32_t V_4 = 0;
 	int32_t V_5 = 0;
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:50>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:50>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___leaderboardText;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -1435,50 +1437,50 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeaderboardManager_UpdateLeaderboardText
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:50>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:50>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:52>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:52>
 		V_0 = _stringLiteral8A67228E0691F2E30BEBC9CF05E8711E36D2A226;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:54>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:54>
 		V_1 = 0;
 		goto IL_00b3;
 	}
 
 IL_001c:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:56>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:56>
 		List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* L_2 = __this->___leaderboardEntries;
 		int32_t L_3 = V_1;
 		NullCheck(L_2);
 		LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* L_4;
 		L_4 = List_1_get_Item_mAD2646295C206BBD325B44CABE05B86767E845FD(L_2, L_3, List_1_get_Item_mAD2646295C206BBD325B44CABE05B86767E845FD_RuntimeMethod_var);
 		V_2 = L_4;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:57>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:57>
 		LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* L_5 = V_2;
 		NullCheck(L_5);
 		float L_6 = L_5->___time;
 		int32_t L_7;
 		L_7 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline(((float)(L_6/(60.0f))), NULL);
 		V_3 = L_7;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:58>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:58>
 		LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* L_8 = V_2;
 		NullCheck(L_8);
 		float L_9 = L_8->___time;
 		int32_t L_10;
 		L_10 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline((fmodf(L_9, (60.0f))), NULL);
 		V_4 = L_10;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:59>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:59>
 		LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* L_11 = V_2;
 		NullCheck(L_11);
 		float L_12 = L_11->___time;
 		int32_t L_13;
 		L_13 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline((fmodf(((float)il2cpp_codegen_multiply(L_12, (100.0f))), (100.0f))), NULL);
 		V_5 = L_13;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:60>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:60>
 		String_t* L_14 = V_0;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_15 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)5);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_16 = L_15;
@@ -1521,14 +1523,14 @@ IL_001c:
 		String_t* L_36;
 		L_36 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_14, L_35, NULL);
 		V_0 = L_36;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:54>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:54>
 		int32_t L_37 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_37, 1));
 	}
 
 IL_00b3:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:54>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:54>
 		int32_t L_38 = V_1;
 		List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* L_39 = __this->___leaderboardEntries;
 		NullCheck(L_39);
@@ -1540,12 +1542,12 @@ IL_00b3:
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:63>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:63>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_41 = __this->___leaderboardText;
 		String_t* L_42 = V_0;
 		NullCheck(L_41);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_41, L_42);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:64>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:64>
 		return;
 	}
 }
@@ -1574,14 +1576,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeaderboardManager_SaveLeaderboard_mB18A
 	LeaderboardData_tC795140D245D5FD45043E782E24A68F8F04166C6* G_B1_2 = NULL;
 	LeaderboardData_tC795140D245D5FD45043E782E24A68F8F04166C6* G_B1_3 = NULL;
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:68>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:69>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:70>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:71>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:72>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:73>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:74>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:75>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:68>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:69>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:70>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:71>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:72>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:73>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:74>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:75>
 		LeaderboardData_tC795140D245D5FD45043E782E24A68F8F04166C6* L_0 = (LeaderboardData_tC795140D245D5FD45043E782E24A68F8F04166C6*)il2cpp_codegen_object_new(LeaderboardData_tC795140D245D5FD45043E782E24A68F8F04166C6_il2cpp_TypeInfo_var);
 		LeaderboardData__ctor_m3F52847C67F48152DAA01A07746520CA9BA60A75(L_0, NULL);
 		LeaderboardData_tC795140D245D5FD45043E782E24A68F8F04166C6* L_1 = L_0;
@@ -1625,16 +1627,16 @@ IL_002b:
 		NullCheck(G_B2_2);
 		G_B2_2->___entries = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&G_B2_2->___entries), (void*)L_9);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:77>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:77>
 		String_t* L_10;
 		L_10 = JsonUtility_ToJson_m28CC6843B9D3723D88AD13EA3829B71FDE7826BA(G_B2_3, NULL);
 		V_0 = L_10;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:78>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:78>
 		String_t* L_11 = V_0;
 		PlayerPrefs_SetString_mF4F457C81BB75F0213547C6287BA36E15E1F0256(_stringLiteralD124C0E8DDE1F1D409D365DD3D427AA22824E3AF, L_11, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:79>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:79>
 		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:80>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:80>
 		return;
 	}
 }
@@ -1656,7 +1658,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeaderboardManager_LoadLeaderboard_mA1BB
 	List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* G_B2_0 = NULL;
 	LeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863* G_B2_1 = NULL;
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:84>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:84>
 		bool L_0;
 		L_0 = PlayerPrefs_HasKey_mCA5C64BBA6BF8B230BC3BC92B4761DD3B11D4668(_stringLiteralD124C0E8DDE1F1D409D365DD3D427AA22824E3AF, NULL);
 		if (!L_0)
@@ -1665,14 +1667,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeaderboardManager_LoadLeaderboard_mA1BB
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:86>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:86>
 		String_t* L_1;
 		L_1 = PlayerPrefs_GetString_mA4C9F842BF77E5572AB20EA087C7048F870D02AE(_stringLiteralD124C0E8DDE1F1D409D365DD3D427AA22824E3AF, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:87>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:87>
 		LeaderboardData_tC795140D245D5FD45043E782E24A68F8F04166C6* L_2;
 		L_2 = JsonUtility_FromJson_TisLeaderboardData_tC795140D245D5FD45043E782E24A68F8F04166C6_m3687503B38107B26E8A71E674287D484BBEBD662(L_1, JsonUtility_FromJson_TisLeaderboardData_tC795140D245D5FD45043E782E24A68F8F04166C6_m3687503B38107B26E8A71E674287D484BBEBD662_RuntimeMethod_var);
 		V_0 = L_2;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:88>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:88>
 		LeaderboardData_tC795140D245D5FD45043E782E24A68F8F04166C6* L_3 = V_0;
 		NullCheck(L_3);
 		List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* L_4 = L_3->___entries;
@@ -1702,7 +1704,7 @@ IL_002c:
 
 IL_0031:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:90>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:90>
 		return;
 	}
 }
@@ -1717,9 +1719,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeaderboardManager__ctor_mDD7C7D65BF43D3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:9>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:9>
 		__this->___maxEntries = ((int32_t)10);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:11>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:11>
 		List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE* L_0 = (List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE*)il2cpp_codegen_object_new(List_1_t72AC699C0AED8BFE774ABB6FC2A67935484CFAFE_il2cpp_TypeInfo_var);
 		List_1__ctor_m9BE2E1BEFEE11E2B35CFC9B39AFF045892FAB4CE(L_0, List_1__ctor_m9BE2E1BEFEE11E2B35CFC9B39AFF045892FAB4CE_RuntimeMethod_var);
 		__this->___leaderboardEntries = L_0;
@@ -1797,7 +1799,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m3A53FA9C60275545E71235041
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CIsRecordTimeU3Eb__4_0_mB0C179B84A77BBC478847AC20098F285F2A5FCA3 (U3CU3Ec_t8491CAC00159E722F9BD9B5B1242BF95EE4A1B7E* __this, LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* ___0_e, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:27>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:27>
 		LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* L_0 = ___0_e;
 		NullCheck(L_0);
 		float L_1 = L_0->___time;
@@ -1808,7 +1810,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CIsRecordTimeU3Eb__4_0_mB0C17
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CAddEntryU3Eb__5_0_m2681EC0A4C30AC70FC0F2CD6778DFB378DC0D6CE (U3CU3Ec_t8491CAC00159E722F9BD9B5B1242BF95EE4A1B7E* __this, LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* ___0_e, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:40>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:40>
 		LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* L_0 = ___0_e;
 		NullCheck(L_0);
 		float L_1 = L_0->___time;
@@ -1825,11 +1827,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LeaderboardEntry_t3ED0F2072E72542782694C7E3DC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:70>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:71>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:72>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:73>
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/LeaderboardManager.cs:74>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:70>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:71>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:72>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:73>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/LeaderboardManager.cs:74>
 		LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* L_0 = (LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D*)il2cpp_codegen_object_new(LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D_il2cpp_TypeInfo_var);
 		LeaderboardEntry__ctor_mAC72F58F692694604792B1267BC3E7DBB73CE5B6(L_0, NULL);
 		LeaderboardEntry_t3ED0F2072E72542782694C7E3DC81C1BB9E89D7D* L_1 = L_0;
@@ -1866,7 +1868,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TableTriggerZone_OnTriggerEnter_mE74A4AE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/TableTriggerZone.cs:7>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/TableTriggerZone.cs:7>
 		AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* L_0 = ((AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5_StaticFields*)il2cpp_codegen_static_fields_for(AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5_il2cpp_TypeInfo_var))->___Instance;
 		NullCheck(L_0);
 		bool L_1 = L_0->___isDone;
@@ -1876,11 +1878,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TableTriggerZone_OnTriggerEnter_mE74A4AE
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/TableTriggerZone.cs:9>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/TableTriggerZone.cs:9>
 		AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* L_2 = ((AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5_StaticFields*)il2cpp_codegen_static_fields_for(AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5_il2cpp_TypeInfo_var))->___Instance;
 		NullCheck(L_2);
 		AssemblyTimerManager_StopTimer_m07718BDB196C02280D18059241C7C834DA2BF019(L_2, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/TableTriggerZone.cs:10>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/TableTriggerZone.cs:10>
 		AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5* L_3 = ((AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5_StaticFields*)il2cpp_codegen_static_fields_for(AssemblyTimerManager_t41A812B23C910F921663C2D27D68BEB0F0C1C1C5_il2cpp_TypeInfo_var))->___Instance;
 		NullCheck(L_3);
 		AssemblyTimerManager_SetRecord_m96C5A7748C671E43614077299912BC9EA4A52D38(L_3, NULL);
@@ -1888,7 +1890,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TableTriggerZone_OnTriggerEnter_mE74A4AE
 
 IL_0020:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/TableTriggerZone.cs:12>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/TableTriggerZone.cs:12>
 		return;
 	}
 }
@@ -1918,11 +1920,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_Start_m6133FC1CDC56B66
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:15>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:15>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___inputDisplay;
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_0, _stringLiteral50639CAD49418C7B223CC529395C0E2A3892501C);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:17>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:17>
 		return;
 	}
 }
@@ -1936,7 +1938,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_AddCharacter_mFED09B1B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:21>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:21>
 		String_t* L_0 = __this->___currentText;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -1948,14 +1950,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_AddCharacter_mFED09B1B
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:23>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:23>
 		String_t* L_3 = __this->___currentText;
 		String_t* L_4 = ___0_character;
 		String_t* L_5;
 		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_3, L_4, NULL);
 		__this->___currentText = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentText), (void*)L_5);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:24>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:24>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_6 = __this->___inputDisplay;
 		String_t* L_7 = __this->___currentText;
 		String_t* L_8;
@@ -1966,7 +1968,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_AddCharacter_mFED09B1B
 
 IL_0040:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:26>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:26>
 		return;
 	}
 }
@@ -1980,7 +1982,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_Backspace_m3B982F34A8C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:30>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:30>
 		String_t* L_0 = __this->___currentText;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -1991,7 +1993,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_Backspace_m3B982F34A8C
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:32>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:32>
 		String_t* L_2 = __this->___currentText;
 		String_t* L_3 = __this->___currentText;
 		NullCheck(L_3);
@@ -2002,7 +2004,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_Backspace_m3B982F34A8C
 		L_5 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_2, 0, ((int32_t)il2cpp_codegen_subtract(L_4, 1)), NULL);
 		__this->___currentText = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentText), (void*)L_5);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:33>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:33>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_6 = __this->___inputDisplay;
 		String_t* L_7 = __this->___currentText;
 		String_t* L_8;
@@ -2013,7 +2015,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_Backspace_m3B982F34A8C
 
 IL_0048:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:35>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:35>
 		return;
 	}
 }
@@ -2033,7 +2035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_Submit_mE59E868CEE1FDA
 	}
 	LeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863* V_0 = NULL;
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:39>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:39>
 		String_t* L_0 = __this->___currentText;
 		bool L_1;
 		L_1 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_0, NULL);
@@ -2043,7 +2045,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_Submit_mE59E868CEE1FDA
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:41>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:41>
 		String_t* L_2 = __this->___currentText;
 		float L_3 = __this->___recordedTime;
 		float L_4 = L_3;
@@ -2052,12 +2054,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_Submit_mE59E868CEE1FDA
 		L_6 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(_stringLiteralF182DB03DB8AA08515DACF98A6FE28DDFB0BA519, L_2, L_5, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_6, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:43>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:43>
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		LeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863* L_7;
 		L_7 = Object_FindObjectOfType_TisLeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863_m0748260AF04523B6DC9CEDF35239E7C1AFA6365B(Object_FindObjectOfType_TisLeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863_m0748260AF04523B6DC9CEDF35239E7C1AFA6365B_RuntimeMethod_var);
 		V_0 = L_7;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:44>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:44>
 		LeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863* L_8 = V_0;
 		bool L_9;
 		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -2067,7 +2069,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_Submit_mE59E868CEE1FDA
 		}
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:46>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:46>
 		LeaderboardManager_tCEE53D433AF4E2936DB9C3815CD0644C371E4863* L_10 = V_0;
 		String_t* L_11 = __this->___currentText;
 		float L_12 = __this->___recordedTime;
@@ -2077,12 +2079,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_Submit_mE59E868CEE1FDA
 
 IL_004e:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:49>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:49>
 		VRKeyboardManager_HideKeyboard_mFFA00BAA48BDC0563A05FA8639BB0294866DF6DA(__this, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:51>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:51>
 		__this->___currentText = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentText), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:52>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:52>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_13 = __this->___inputDisplay;
 		NullCheck(L_13);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_13, _stringLiteral50639CAD49418C7B223CC529395C0E2A3892501C);
@@ -2090,7 +2092,7 @@ IL_004e:
 
 IL_006f:
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:54>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:54>
 		return;
 	}
 }
@@ -2098,10 +2100,10 @@ IL_006f:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_SetRecordTime_m7ACA137FC4C1494591E71D89227F1426A4296255 (VRKeyboardManager_t11307D6BA90CDA5EFAA798969F6CE01BF37165BB* __this, float ___0_time, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:58>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:58>
 		float L_0 = ___0_time;
 		__this->___recordedTime = L_0;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:59>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:59>
 		return;
 	}
 }
@@ -2116,18 +2118,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_ShowKeyboard_m47EB63EF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:63>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:63>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___keyboard;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:64>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:64>
 		__this->___currentText = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentText), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:65>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:65>
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = __this->___inputDisplay;
 		NullCheck(L_1);
 		VirtualActionInvoker1< String_t* >::Invoke(75, L_1, _stringLiteral50639CAD49418C7B223CC529395C0E2A3892501C);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:66>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:66>
 		return;
 	}
 }
@@ -2135,11 +2137,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_ShowKeyboard_m47EB63EF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager_HideKeyboard_mFFA00BAA48BDC0563A05FA8639BB0294866DF6DA (VRKeyboardManager_t11307D6BA90CDA5EFAA798969F6CE01BF37165BB* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:70>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:70>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___keyboard;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:71>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:71>
 		return;
 	}
 }
@@ -2153,10 +2155,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VRKeyboardManager__ctor_m22D58B3B0A0CEB7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:8>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:8>
 		__this->___currentText = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentText), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:9>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:9>
 		__this->___maxLength = ((int32_t)20);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -2362,10 +2364,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_m2A39AE8
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void VRKeyboardManager_SetRecordTime_m7ACA137FC4C1494591E71D89227F1426A4296255_inline (VRKeyboardManager_t11307D6BA90CDA5EFAA798969F6CE01BF37165BB* __this, float ___0_time, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:58>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:58>
 		float L_0 = ___0_time;
 		__this->___recordedTime = L_0;
-		//<source_info:E:/MyGames/vrchik/VR_1_2_final/lb_5/Assets/Scripts/VRKeyboardManager.cs:59>
+		//<source_info:D:/LostDotProjects/VR_Games/lb_5/Assets/Scripts/VRKeyboardManager.cs:59>
 		return;
 	}
 }

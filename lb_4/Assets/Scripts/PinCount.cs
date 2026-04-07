@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
-
+[RequireComponent(typeof(BoxCollider))]
 public class PinManager : MonoBehaviour
 {
     public Transform[] pins;
@@ -10,9 +10,19 @@ public class PinManager : MonoBehaviour
     private bool[] knockedPins;
     private int score = 0;
 
+    private int ballCount;    
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Ball"))
+        {
+            ballCount++;
+        }   
+    }
+    private Transform[] initialPosition;
     void Start()
     {
-        pins = FindObjectsOfType<Transform>().Where(t => t.CompareTag("BowlingPin")).ToArray();
+        ballCount = 0;
+
         initialHeights = new float[pins.Length];
         knockedPins = new bool[pins.Length];
         Debug.Log($"Кегли: {pins.Length}");
@@ -20,6 +30,7 @@ public class PinManager : MonoBehaviour
         for (int i = 0; i < pins.Length; i++)
         {
             initialHeights[i] = pins[i].position.y;
+            initialPosition[i] = pins[i];
         }
     }
 
@@ -33,6 +44,14 @@ public class PinManager : MonoBehaviour
                 score++;
                 scoreText.text = $"Score: {score}";
             }
+        }
+        if(ballCount == 2)
+        {
+            for(int i = 0; i < pins.Length; i++)
+            {
+                pins[i] = initialPosition[i];
+            }
+            ballCount = 0;
         }
     }
 }
