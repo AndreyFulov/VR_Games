@@ -53,5 +53,6 @@ public class PinManager : MonoBehaviour
             }
             ballCount = 0;
         }
+        if(knockedPins)
     }
 }
